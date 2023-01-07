@@ -26,7 +26,7 @@ def settings():
     global i, keys
     for event in pg.event.get():
         if event.type == pg.QUIT:
-            i = -1
+            i = -1 # JAK SIĘ WCISKA X ŻEBY ZAMKNĄĆ OKNO TO ZACZYNA WYŚWIETLAĆ OD POCZĄTKU, NA POCZĄTKU BYŁ TO BUG, ALE POTEM STWIERDZILIŚMY ŻE TO FEATURE
     keys = pg.key.get_pressed()
     pg.time.delay(998)
 
